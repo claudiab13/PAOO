@@ -21,4 +21,17 @@ class Student{
 
         //Constructorul de mutare
         Student(Student&&);
+
+        //SET
+        void setNume(const std::string &nume);
+        void setPrenume(const std::string &prenume);
+        void setVarsta(int varsta);
+        void setMedia(double media);
+
+        //GET
+        std::string getNume();
+        std::string getPrenume();
+        int getVarsta();
+        double getMedia();
+
 };
