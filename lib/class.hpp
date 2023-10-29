@@ -6,6 +6,8 @@ class Student{
         int varsta;
         double media;
 
+    
+    public:
         // Constructorul
         Student(std::string nume, std::string prenume, 
                 int varsta, 

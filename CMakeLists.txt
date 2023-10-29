@@ -2,8 +2,10 @@ cmake_minimum_required(VERSION 3.10)
 project(OOPIntro VERSION 1.0)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
-add_subdirectory(exe lab3.cxx)
-target_link_libraries(exe PUBLIC
+add_subdirectory(lib)
+add_executable(Class main.cpp)
+target_link_libraries(Class PUBLIC ClassLib)
+target_include_directories(Class PUBLIC
                         "$(PROJECT_BINARY_DIR)"
-                        "$(PROJECT_SOURCE_DIR/class)"
+                        "$(PROJECT_SOURCE_DIR/lib)"
                         )
