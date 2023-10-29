@@ -1,9 +1,11 @@
 #include <iostream>
 #include <cstring>
-#include "class.hpp"
+#include "lib/class.hpp"
+#include "lib/class.cpp"
 
-void main()
+int main()
 {
-
-
+    Student student("Burcea", "Claudia", 22, 8.0);
+    
+    return 0;
 }
