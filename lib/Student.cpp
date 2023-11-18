@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstring>
-#include "class.hpp"
+#include "Student.hpp"
+
 
 // Constructorul
 Student::Student(std::string nume, std::string prenume, int varsta, double media)

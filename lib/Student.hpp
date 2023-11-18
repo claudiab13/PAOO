@@ -1,6 +1,7 @@
 #pragma once
+#include <string>
 
-class Student{
+class Student {
     private:
         std::string nume, prenume;
         int varsta;
@@ -40,5 +41,7 @@ class Student{
 
         //Supraincaarcarea operatorului de mutare
         Student& operator=(Student&& st);
+
+        
 
 };
