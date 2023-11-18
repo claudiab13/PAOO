@@ -39,6 +39,6 @@ class Student{
         Student& operator=(const Student& st);
 
         //Supraincaarcarea operatorului de mutare
-        Student& Student::operator=(Student&& st);
+        Student& operator=(Student&& st);
 
 };
