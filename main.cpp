@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstring>
-#include "lib/class.hpp"
-#include "lib/class.cpp"
+#include "lib/Student.hpp"
+#include "lib/Student.cpp"
 
 int main()
 {
@@ -42,6 +42,11 @@ int main()
     student3 = std::move(student2);
     std::cout << "Student 2 (dupa mutare): " << student2.getNume() << ", Varsta: " << student2.getVarsta() << ", Media: " << student2.getMedia() << std::endl;
     std::cout << "Student 3 (dupa mutare): " << student3.getNume() << ", Varsta: " << student3.getVarsta() << ", Media: " << student3.getMedia() << std::endl;
+
+
+    
+
+
 
 
     return 0;
