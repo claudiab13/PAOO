@@ -34,4 +34,11 @@ class Student{
         int getVarsta();
         double getMedia();
 
+
+        //Supraincarcarea operatorului de atribuire
+        Student& operator=(const Student& st);
+
+        //Supraincaarcarea operatorului de mutare
+        Student& Student::operator=(Student&& st);
+
 };

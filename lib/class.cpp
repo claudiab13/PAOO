@@ -24,7 +24,7 @@ Student::~Student()
 
 //Constructorul de mutare
 Student::Student(Student&& st)
-: nume(st.nume), prenume(st.prenume), varsta(st.varsta), media(st.media)
+: nume(std::move(st.nume)), prenume(std::move(st.prenume)), varsta(std::move(st.varsta)), media(std::move(st.media))
 {
     std::cout << "Obiectul: " << this->nume << " " << this->prenume << ", " << this->varsta <<" ani, media: " << this->media << " a fost MUTAT.\n";
 }
@@ -66,3 +66,30 @@ double Student::getMedia()
 {
     return this->media;
 }
+
+
+    //Supraincarcarea operatorului de atribuire
+    Student& Student::operator=(const Student& st)
+    {
+        if (this != &st) 
+        {
+            nume = st.nume;
+            prenume = st.prenume;
+            varsta = st.varsta;
+                media = st.media;
+            }
+            return *this;
+    }
+
+    //Supraincarcarea operatorului de mutare
+    Student& Student::operator=(Student&& st) 
+    {
+        if (this != &st) 
+        {
+            nume = std::move(st.nume);
+            prenume = std::move(st.prenume);
+            varsta = std::move(st.varsta);
+            media = std::move(st.media);
+        }
+        return *this;
+    }
