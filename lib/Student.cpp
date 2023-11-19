@@ -3,6 +3,8 @@
 #include "Student.hpp"
 
 
+namespace students{
+
 // Constructorul
 Student::Student(std::string nume, std::string prenume, int varsta, double media)
 : nume(nume), prenume(prenume), varsta(varsta), media(media)
@@ -106,3 +108,5 @@ double Student::getMedia()
         std::cout << "Studentul e prezent." << std::endl;
     }
 
+
+}

@@ -2,6 +2,7 @@
 #include "Student.hpp"
 #include <string>
 
+namespace students {
 
 class EngineeringStudent : public Student {
 private:
@@ -20,3 +21,4 @@ public:
     virtual void studiaza() override;
 
 };
+}

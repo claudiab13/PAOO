@@ -1,6 +1,9 @@
 #pragma once
 #include <string>
 
+
+namespace students{
+
 class Student {
     private:
         std::string nume, prenume;
@@ -50,3 +53,4 @@ class Student {
         virtual void participa(); 
         virtual void prezenta();
 };
+}

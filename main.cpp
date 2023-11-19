@@ -1,7 +1,11 @@
 #include <iostream>
 #include <cstring>
+
 #include "lib/Student.hpp"
-#include "lib/Student.cpp"
+#include "lib/EngineeringStudent.hpp"
+#include "lib/MedicalStudent.hpp"
+
+using namespace students;
 
 int main()
 {

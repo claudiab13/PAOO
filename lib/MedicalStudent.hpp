@@ -2,6 +2,7 @@
 #include "Student.hpp"
 #include <string>
 
+namespace students{
 
 class MedicalStudent : public Student {
 private:
@@ -19,3 +20,4 @@ public:
     virtual void afisareDetalii() override;
     virtual void studiaza() override;
 };
+}
