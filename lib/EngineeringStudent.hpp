@@ -2,10 +2,11 @@
 #include "Student.hpp"
 #include <string>
 
+namespace students {
 
 class EngineeringStudent : public Student {
 private:
-    std::string major;  // Major of the engineering student
+    std::string major;  
 
 public:
     
@@ -14,4 +15,10 @@ public:
     const std::string& getMajor() const;
 
     void setMajor(const std::string& newMajor);
+
+    //suprascriere functii pur virtuale
+    virtual void afisareDetalii() override;
+    virtual void studiaza() override;
+
 };
+}

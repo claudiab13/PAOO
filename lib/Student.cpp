@@ -3,6 +3,8 @@
 #include "Student.hpp"
 
 
+namespace students{
+
 // Constructorul
 Student::Student(std::string nume, std::string prenume, int varsta, double media)
 : nume(nume), prenume(prenume), varsta(varsta), media(media)
@@ -94,3 +96,17 @@ double Student::getMedia()
         }
         return *this;
     }
+
+
+
+    // Virtual functions with default implementations
+    void Student::participa() {
+        std::cout << "Studentul participa la diferite activitati." << std::endl;
+    }
+
+    void Student::prezenta() {
+        std::cout << "Studentul e prezent." << std::endl;
+    }
+
+
+}
