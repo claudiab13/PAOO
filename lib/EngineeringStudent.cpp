@@ -1,14 +1,9 @@
 #include <iostream>
 #include <cstring>
-#include "Student.hpp"
+#include "EngineeringStudent.hpp"
+
 
 namespace students {
-
-class EngineeringStudent : public Student {
-private:
-    std::string major;  
-
-public:
     
     EngineeringStudent::EngineeringStudent(std::string nume, std::string prenume, int varsta, double media, const std::string& major)
         : Student(nume, prenume, varsta, media), major(major) {
@@ -24,13 +19,13 @@ public:
 
 
     //suprascriere functii pur virtuale
-    void EngineeringStudent::afisareDetalii() override{
+    void EngineeringStudent::afisareDetalii() {
         std::cout << "Student la inginerie: " << getNume() << " " << getPrenume() << ", Major: " << major << std::endl;
     }
 
-    void EngineeringStudent::studiaza() override{
+    void EngineeringStudent::studiaza() {
         std::cout << "Studentul invata inginerie." << std::endl;
 
     }
-};
+
 }
