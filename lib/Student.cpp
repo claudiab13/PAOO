@@ -99,7 +99,7 @@ double Student::getMedia()
 
 
 
-    // Virtual functions with default implementations
+    // Functii virtuale
     void Student::participa() {
         std::cout << "Studentul participa la diferite activitati." << std::endl;
     }

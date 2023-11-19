@@ -1,1 +1,1 @@
-add_library(ClassLib STATIC Student.cpp)
+add_library(StudentLib STATIC Student.cpp EngineeringStudent.cpp MedicalStudent.cpp)

@@ -42,7 +42,7 @@ class Student {
         //Supraincarcarea operatorului de atribuire
         Student& operator=(const Student& st);
 
-        //Supraincaarcarea operatorului de mutare
+        //Supraincarcarea operatorului de mutare
         Student& operator=(Student&& st);
 
         //functii virtuale pure
