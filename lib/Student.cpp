@@ -94,3 +94,15 @@ double Student::getMedia()
         }
         return *this;
     }
+
+
+
+    // Virtual functions with default implementations
+    void Student::participa() {
+        std::cout << "Studentul participa la diferite activitati." << std::endl;
+    }
+
+    void Student::prezenta() {
+        std::cout << "Studentul e prezent." << std::endl;
+    }
+

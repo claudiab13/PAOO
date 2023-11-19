@@ -5,13 +5,17 @@
 
 class MedicalStudent : public Student {
 private:
-    std::string specialization;  // Specialization of the medical student
+    std::string specializare;  
 
 public:
-    // Constructor
-    MedicalStudent(std::string nume, std::string prenume, int varsta, double media, const std::string& specialization);
+    
+    MedicalStudent(std::string nume, std::string prenume, int varsta, double media, const std::string& specializare);
 
-    const std::string& getSpecialization() const;
+    const std::string& getSpecializare() const;
 
-    void setSpecialization(const std::string& newSpecialization);
+    void setSpecializare(const std::string& newSpecializare);
+
+    //suprascriere functii pur virtuale
+    virtual void afisareDetalii() override;
+    virtual void studiaza() override;
 };

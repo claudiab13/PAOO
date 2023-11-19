@@ -42,6 +42,11 @@ class Student {
         //Supraincaarcarea operatorului de mutare
         Student& operator=(Student&& st);
 
-        
+        //functii virtuale pure
+        virtual void afisareDetalii() = 0;  
+        virtual void studiaza() = 0;  
 
+        //functii virtuale
+        virtual void participa(); 
+        virtual void prezenta();
 };

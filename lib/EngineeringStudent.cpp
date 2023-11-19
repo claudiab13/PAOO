@@ -5,7 +5,7 @@
 
 class EngineeringStudent : public Student {
 private:
-    std::string major;  // Major of the engineering student
+    std::string major;  
 
 public:
     
@@ -19,5 +19,16 @@ public:
     }
     void setMajor(const std::string& newMajor) { 
         major = newMajor; 
+    }
+
+
+    //suprascriere functii pur virtuale
+    void afisareDetalii() override{
+        std::cout << "Student la inginerie: " << getNume() << " " << getPrenume() << ", Major: " << major << std::endl;
+    }
+
+    void studiaza() override{
+        std::cout << "Studentul invata inginerie." << std::endl;
+
     }
 };
