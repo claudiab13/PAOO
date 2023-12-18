@@ -1,1 +1,1 @@
-add_library(HM3Lib STATIC Worker.cpp)
+add_library(HM3Lib STATIC Worker.cpp WorkerManager.cpp)

@@ -1,5 +1,4 @@
-#ifndef WORKER_MANAGER_H
-#define WORKER_MANAGER_H
+#pragma once
 
 #include <vector>
 #include <thread>
@@ -22,5 +21,3 @@ private:
     std::shared_ptr<int> data;
     std::shared_ptr<int> semaphore;
 };
-
-#endif // WORKER_MANAGER_H

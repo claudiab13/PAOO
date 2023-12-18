@@ -14,9 +14,10 @@ void Worker::operator()() {
 
     (*semaphore)++;
     int localData = *data;
-    std::this_thread::sleep_for(std::chrono::milliseconds(100)); // Simulează operații asupra datelor
+    std::this_thread::sleep_for(std::chrono::milliseconds(100));
     *data = localData + 1;
     (*semaphore)--;
 
     std::cout << "Worker " << id << ": Incremented data to " << *data << std::endl;
 }
+

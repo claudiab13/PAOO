@@ -4,7 +4,6 @@
 WorkerManager::WorkerManager() : data(std::make_shared<int>(0)), semaphore(std::make_shared<int>(0)) {}
 
 WorkerManager::~WorkerManager() {
-    // Nu este necesar să eliberați resursele smart pointer-ilor, aceștia se vor gestiona automat
 }
 
 void WorkerManager::start() {
@@ -12,6 +11,7 @@ void WorkerManager::start() {
 
     for (int i = 0; i < numWorkers; ++i) {
         workers.emplace_back(Worker(i, mtx, data, semaphore));
+
     }
 
     for (auto& worker : workers) {

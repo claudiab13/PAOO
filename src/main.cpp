@@ -5,6 +5,7 @@
 #include <memory>
 
 #include "lib/Worker.hpp"
+#include "lib/WorkerManager.hpp"
 
 int main() {
     
@@ -17,5 +18,13 @@ int main() {
     worker1.operator()();
 
     std::cout << *data << std::endl;
+/*
+
+    WorkerManager manager;
+    manager.start();
+
+    // Așteaptă ca toate firele de execuție să se încheie
+    manager.joinAll();*/
+    std::cout << std::endl;
     return 0;
 }
