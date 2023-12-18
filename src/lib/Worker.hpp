@@ -1,7 +1,10 @@
 #pragma once
 
-#include <mutex>
 #include <iostream>
+#include <thread>
+#include <mutex>
+#include <semaphore>
+#include <memory>
 
 class Worker {
     private:
